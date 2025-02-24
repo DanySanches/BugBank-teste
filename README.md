@@ -10,7 +10,7 @@ Acesse Python Downloads e instale a versão mais recente.
 
 Abra o terminal (CMD) e execute:
 
-´´´cmd
+```
   pip install robotframework
   pip install --upgrade robotframework-seleniumlibrary
-´´´
+```
