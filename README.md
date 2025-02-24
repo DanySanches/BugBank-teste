@@ -180,11 +180,10 @@ Agora é só testar e automatizar tudo! 🚀🔥
 
 ## ✍️ Autoria
 
-# 📌 Danielle Sanches
-# 📌 Assistência e Revisão: ChatGPT
+### 📌 Danielle Sanches
 
 ## 📚 Referências
 
-# 🔹 [Curso Alura - Robot Framework e BDD](https://cursos.alura.com.br/course/robot-framework-testes-padrao-bdd/task/126808)
-# 🔹 [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
+### 🔹 [Curso Alura - Robot Framework e BDD](https://cursos.alura.com.br/course/robot-framework-testes-padrao-bdd/task/126808)
+### 🔹 [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 
