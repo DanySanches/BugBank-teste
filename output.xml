@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-02-24T18:36:03.441456" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro Login Caminho Feliz" source="C:\Users\danys\OneDrive\Área de Trabalho\BugBank_robot\cadastro_login_caminho_feliz.robot">
+<test id="s1-t1" name="Cadastro e Login no BugBank" line="52">
+<kw name="Abrir o navegador" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:04.263381" level="INFO">Opening browser 'Chrome' to base url 'https://bugbank.netlify.app/'.</msg>
+<arg>url=https://bugbank.netlify.app/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-24T18:36:04.262891" elapsed="2.850354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-24T18:36:09.115130" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-24T18:36:07.113947" elapsed="2.001365"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:09.297982" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/carregarPagina.png"&gt;&lt;img src="Screenshots/carregarPagina.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>Screenshots/carregarPagina.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.115593" elapsed="0.182561"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.298417" elapsed="0.037265"/>
+</kw>
+<status status="PASS" start="2025-02-24T18:36:04.261460" elapsed="5.074568"/>
+</kw>
+<kw name="Clicar no botão Registrar">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${botao_registrar}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.338337" elapsed="0.045888"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:09.384949" level="INFO">Clicking element '//button[contains(text(), 'Registrar')]'.</msg>
+<arg>${botao_registrar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.384544" elapsed="0.135900"/>
+</kw>
+<status status="PASS" start="2025-02-24T18:36:09.337213" elapsed="0.183601"/>
+</kw>
+<kw name="Preencher Dados de Cadastro">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${campo_email}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.522689" elapsed="0.076227"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:09.600164" level="INFO">Typing text 'nina@cat.com' into text field '//form[contains(@class, 'ContainerFormRegister')]//input[@name='email']'.</msg>
+<arg>${campo_email}</arg>
+<arg>nina@cat.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.599432" elapsed="0.348363"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:09.949210" level="INFO">Typing text 'Nina Cat' into text field '//input[@name='name']'.</msg>
+<arg>${campo_nome}</arg>
+<arg>Nina Cat</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:09.948312" elapsed="0.267126"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:10.216872" level="INFO">Typing text '12345' into text field '//form[contains(@class, 'ContainerFormRegister')]//input[@name='password']'.</msg>
+<arg>${campo_senha}</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:10.215995" elapsed="0.182660"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:10.399857" level="INFO">Typing text '12345' into text field '//input[@name='passwordConfirmation']'.</msg>
+<arg>${campo_confimar_senha}</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:10.399066" elapsed="0.165041"/>
+</kw>
+<status status="PASS" start="2025-02-24T18:36:09.521883" elapsed="1.042583"/>
+</kw>
+<kw name="Clicar no botão Cadastrar">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${botao_cadastrar}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-24T18:36:10.566315" elapsed="0.043706"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:10.612389" level="INFO">Clicking element '//button[contains(text(), 'Cadastrar')]'.</msg>
+<arg>${botao_cadastrar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T18:36:10.611081" elapsed="0.173140"/>
+</kw>
+<status status="PASS" start="2025-02-24T18:36:10.565404" elapsed="0.219032"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-24T18:36:12.785856" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-24T18:36:10.785067" elapsed="2.000972"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:12.949227" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_cadastro/cadastro_sucesso.png"&gt;&lt;img src="screenshot_cadastro/cadastro_sucesso.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot_cadastro/cadastro_sucesso.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-24T18:36:12.786560" elapsed="0.162864"/>
+</kw>
+<kw name="Clicar no botão Fechar">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-02-24T18:36:23.290127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-24T18:36:23.290453" level="FAIL">Element '//button[contains(text(), 'Fechar')]' not visible after 10 seconds.</msg>
+<arg>${botao_fechar}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-02-24T18:36:12.950719" elapsed="10.344188">Element '//button[contains(text(), 'Fechar')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${botao_fechar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-24T18:36:23.295409" elapsed="0.000081"/>
+</kw>
+<status status="FAIL" start="2025-02-24T18:36:12.950058" elapsed="10.345739">Element '//button[contains(text(), 'Fechar')]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-24T18:36:23.296296" elapsed="0.000075"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>screenshot_cadastro/fechar_popup.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-02-24T18:36:23.296907" elapsed="0.000103"/>
+</kw>
+<kw name="Preencher Dados de Login">
+<status status="NOT RUN" start="2025-02-24T18:36:23.297716" elapsed="0.000084"/>
+</kw>
+<kw name="Clicar no botão Acessar">
+<status status="NOT RUN" start="2025-02-24T18:36:23.298236" elapsed="0.000068"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-24T18:36:23.298693" elapsed="0.000379"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>screenshot_login/login_sucesso.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-02-24T18:36:23.299564" elapsed="0.000067"/>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-24T18:36:23.300903" elapsed="2.415331"/>
+</kw>
+<status status="PASS" start="2025-02-24T18:36:23.300334" elapsed="2.416097"/>
+</kw>
+<doc>Teste completo de cadastro e login no BugBank</doc>
+<status status="FAIL" start="2025-02-24T18:36:04.259715" elapsed="21.456981">Element '//button[contains(text(), 'Fechar')]' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2025-02-24T18:36:03.444498" elapsed="22.273903"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Cadastro Login Caminho Feliz" id="s1" pass="0" fail="1" skip="0">Cadastro Login Caminho Feliz</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
